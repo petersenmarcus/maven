@@ -27,7 +27,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Step 3  Have github actions build maven project
-        run: mvn clean install
+        run: mvn -B package --file pom.xml
       
       - name: Step 4 List current working directory
         run: ls -a
